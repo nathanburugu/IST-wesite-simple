@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <title>Institute of software technologies</title>
+</head>
+<body>
+    <!--Header-->
+    <section class="sub-header">
+        <nav>
+            <!--logo-->
+            <a href="index.html"><img src="./images/Capture.PNG" alt=""></a>
+            <!--links-->
+            <div class="nav-links" id="navLinks">
+                <!--closing icon-->
+                <i class="fa-solid fa-xmark" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="courses.html">Courses</a></li>
+                    <li><a href="#">Blog</a></li>
+                    <li><a href="#">contact</a></li>
+                </ul>
+            </div>
+            <!--menu bars for dropdown menu-->
+            <i class="fa-solid fa-bars-staggered" onclick="showMenu()"></i>
+        </nav>
+        <h1>About Us</h1>
+    </section>
+    <!--about us content-->
+    <section class="about-us">
+        <div class="row">
+            <div class="about-col">
+                <h1>We are Kenyas leading institute of software Technologies</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet omnis minima corporis laborum totam sit harum consequatur, quis cupiditate aliquam sed error quisquam ullam numquam voluptas illo ipsam impedit vero aut molestiae, fuga accusamus. Tenetur, rerum, labore necessitatibus debitis blanditiis asperiores nesciunt facere iure ullam explicabo placeat possimus enim saepe?</p>
+                <a href="#" class="hero-btn red-btn">Explore Now</a>
+            </div>
+            <div class="about-col">
+                <img src="./img/wizzard.jpg" alt="">
+            </div>
+        </div>
+    </section>
+    
+
+    <!--Call to Action-->
+    <section class="cta">
+        <h1>Enroll for Our Various <br> onlines Courses</h1>
+        <a href="#" class="hero-btn">Contact Us</a>
+    </section>
+    <!--footer-->
+    <section class="footer">
+        <h4>About us</h4>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda deleniti aliquid enim, eius optio quia. <br> Cupiditate eius recusandae atque earum.</p>
+        <div class="icons">
+            <i class="fa-brands fa-facebook"></i>
+            <i class="fa-brands fa-twitter"></i>
+            <i class="fa-brands fa-instagram"></i>
+            <i class="fa-brands fa-github"></i>
+            <i class="fa-brands fa-linkedin"></i>
+        </div>
+        <p>made with <i class="fa-solid fa-circle-heart"></i>by nate</p>
+    </section>
+    <!--Script tag for the menu bar the menu becomes visible when we click on the font awesome icons and also disapeers-->
+<script>
+    var navLinks = document.getElementById("navLinks");
+    function showMenu(){
+        navLinks.style.right = "0";
+    }
+    function hideMenu(){
+        navLinks.style.right = "-200px"
+    }
+</script>
+</body>
+</html>
